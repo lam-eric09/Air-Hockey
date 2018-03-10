@@ -1,0 +1,3 @@
+# OpenCV sur RPi
+
+Utiliser Picamera: 
