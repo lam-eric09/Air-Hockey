@@ -1,3 +1,5 @@
+#Streaming only blue
+
 import numpy as np
 import cv2
 
@@ -13,10 +15,8 @@ while(1):
     if ret == True:
         hsv = cv2.cvtColor(frame,cv2.COLOR_BGR2HSV)
 
-        #lower, upper values of hsv
-        lower_blue= np.array([50,0,00])
-        upper_blue = np.array([190,255,255])
-
+        lower_blue = np.array([100,50,50])
+        upper_blue = np.array([150,255,255])
         #mask of blue
         mask = cv2.inRange(hsv,lower_blue,upper_blue)
 
